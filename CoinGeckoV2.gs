@@ -69,7 +69,7 @@ const expirationInSeconds = 6;
 
 //COINGECKO PRIVATE KEY 
 //For unlimited calls to Coingecko's API, please provide your private Key in the brackets
-const cg_pro_api_key = "CG-FwmycSPbScjNVhwGpZJZ5LCA";
+const cg_pro_api_key = "CG-wHGGdhmqgmXdfNLeY5uT4XdP";
 
 
 /** GECKOPRICE
