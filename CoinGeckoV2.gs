@@ -114,7 +114,10 @@ async function GECKOPRICE(ticker_array, defaultVersusCoin) {
         }
         pro_path = "api";
         pro_path_key = "";
-        
+        if (cg_pro_api_key) {
+            pro_path = "pro-api";
+            pro_path_key = "&x_cg_pro_api_key=" + cg_pro_api_key;
+        }
         let tickerList = JSON.parse(UrlFetchApp.fetch("https://" + pro_path + ".coingecko.com/api/v3/simple/price?ids=" + coinList + "&vs_currencies=" + versusCoinList + pro_path_key).getContentText());
         let dict = [];
         for (let i = 0; i < pairList.length; i++) {
